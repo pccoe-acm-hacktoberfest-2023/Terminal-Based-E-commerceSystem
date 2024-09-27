@@ -3,7 +3,7 @@ import os
 from utils.helper import encrypt_password, decrypt_password, generate_key
 
 
-# generate_key()
+generate_key()
 
 class Product:
     def __init__(self, product_id, name, price, stock=None):
@@ -13,7 +13,6 @@ class Product:
         self.stock = stock
     
     def __str__(self):
-        # if stock is available 
         if self.stock is not None:
             return f"{self.product_id}: {self.name} - ${self.price:.2f} (Stock: {self.stock})"
         else:
@@ -29,12 +28,9 @@ class User:
         self.order_history = []
 
     def add_to_cart(self, product):
-        if product.stock > 0:
-            self.cart.append(product)
-            product.stock -= 1
-            print(f"{product.name} added to cart.")
-        else:
-            print("Sorry, this product is out of stock!")
+        self.cart.append(product)
+        product.stock -= 1
+        print(f"{product.name} added to cart.")
 
     def view_cart(self):
         if not self.cart:
@@ -42,7 +38,7 @@ class User:
         else:
             print("Your Cart:")
             for index, product in enumerate(self.cart, start=1):
-              if product.stock is not None:  # Check if stock is not None
+              if product.stock is not None:  
                  print(f"{index}. {product.name} - ${product.price} (Stock left: {product.stock})")
               else:
                  print(f"{index}. {product.name} - ${product.price}") 
@@ -67,7 +63,6 @@ class User:
                 print(f"  - {product}")
 
     def to_dict(self):
-        #convert user object to dict to save
         return {
             'username': self.username,
             'password': encrypt_password(self.password).decode(),
@@ -80,7 +75,6 @@ class User:
 
     @staticmethod
     def from_dict(user_data):
-        #create user object from dict saved in file
         user = User(user_data['username'], decrypt_password(user_data['password'].encode()))
         user.cart = [Product(**item) for item in user_data['cart']]
         user.order_history = [[Product(**item) for item in order] for order in user_data['order_history']]
@@ -150,9 +144,6 @@ class ECommerceSystem:
             print("User not found!")
             return None
         user = self.users[username]
-        if user.password != password:
-            print("Incorrect password!")
-            return None
         print(f"Welcome, {username}!")
         return user
 
@@ -242,5 +233,4 @@ def main():
             print("Invalid choice!")
 
 
-if __name__ == "__main__":
-    main()
+
