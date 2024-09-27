@@ -1,0 +1,41 @@
+{
+    "vinayak": {
+        "username": "vinayak",
+        "password": "gAAAAABm9h2GhfpAEn_HmImA2Tyo88lQALoGP-q3QXDTueUrAgWL9dM-OOX6UADJkZ38Btb6dcPc92ZoP5st133LlauoV1FDTQ==",
+        "cart": [
+            {
+                "product_id": "006",
+                "name": "Gaming Console",
+                "price": 399.99
+            },
+            {
+                "product_id": "008",
+                "name": "Bluetooth Speaker",
+                "price": 59.99
+            }
+        ],
+        "order_history": [
+            [
+                {
+                    "product_id": "002",
+                    "name": "Smartphone",
+                    "price": 499.99
+                }
+            ],
+            [
+                {
+                    "product_id": "005",
+                    "name": "Wireless Earbuds",
+                    "price": 129.99
+                }
+            ],
+            [
+                {
+                    "product_id": "005",
+                    "name": "Wireless Earbuds",
+                    "price": 129.99
+                }
+            ]
+        ]
+    }
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "product_id": "001",
+        "name": "Laptop",
+        "price": 999.99,
+        "stock": 7
+    },
+    {
+        "product_id": "002",
+        "name": "Smartphone",
+        "price": 499.99,
+        "stock": 2
+    },
+    {
+        "product_id": "003",
+        "name": "Tablet",
+        "price": 299.99,
+        "stock": 2
+    },
+    {
+        "product_id": "004",
+        "name": "Smartwatch",
+        "price": 199.99,
+        "stock": 15
+    },
+    {
+        "product_id": "005",
+        "name": "Wireless Earbuds",
+        "price": 129.99,
+        "stock": 18
+    },
+    {
+        "product_id": "006",
+        "name": "Gaming Console",
+        "price": 399.99,
+        "stock": 4
+    },
+    {
+        "product_id": "007",
+        "name": "4K TV",
+        "price": 799.99,
+        "stock": 7
+    },
+    {
+        "product_id": "008",
+        "name": "Bluetooth Speaker",
+        "price": 59.99,
+        "stock": 24
+    },
+    {
+        "product_id": "009",
+        "name": "External Hard Drive",
+        "price": 89.99,
+        "stock": 10
+    },
+    {
+        "product_id": "010",
+        "name": "Keyboard & Mouse Combo",
+        "price": 49.99,
+        "stock": 18
+    }
+]
