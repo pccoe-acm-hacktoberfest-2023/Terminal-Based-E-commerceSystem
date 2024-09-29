@@ -27,6 +27,45 @@ A Python-based terminal e-commerce system where users can register, log in, brow
 
 ```
 
+# Running the Terminal-Based E-Commerce System
+
+## Prerequisites
+
+- Ensure you have Python installed on your machine (Python 3.6 or higher recommended).
+- Make sure you have `pip` for installing any required packages.
+
+## Steps to Run the Application
+
+1. **Clone the Repository:**
+   - Use the following command to clone the project repository to your local machine:
+     ```bash
+     git clone <repository-url>
+     ```
+
+2. **Navigate to the Project Directory:**
+   - Change into the project directory:
+     ```bash
+     cd Terminal-Based-E-Commerce-System
+     ```
+
+3. **Install Required Packages:**
+   - If there are any dependencies listed in a `requirements.txt` file (if applicable), install them using:
+     ```bash
+     pip install cryptography
+     ```
+
+4. **Run the Application:**
+   - Start the application by executing the main script:
+     ```bash
+     python main.py
+     ```
+
+5. **Follow On-Screen Prompts:**
+   - Follow the instructions displayed in the terminal to register, log in, and use the system.
+
+
+
+
 ## How to Contribute to Terminal-Based E-Commerce System
 
 ### Option 1. Complete this process in GitHub (in your browser)
